@@ -46,9 +46,9 @@ const usePSInfo = () => {
         if((error as { status: number })?.status === 400)
           shouldRemoveCookie = true
       }
-      console.warn(shouldRemoveCookie)
+      console.warn(`${shouldRemoveCookie}111`)
       if (shouldRemoveCookie)
-        Cookies.remove(PARTNER_STACK_CONFIG.cookieName, { path: '/' })
+        Cookies.remove(PARTNER_STACK_CONFIG.cookieName)
       setBind()
     }
   }, [psPartnerKey, psClickId, mutateAsync, hasBind, setBind])
