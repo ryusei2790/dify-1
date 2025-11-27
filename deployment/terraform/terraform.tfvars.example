@@ -1,0 +1,26 @@
+# GCP Project Configuration
+project_id = "your-gcp-project-id"
+region     = "us-central1"
+zone       = "us-central1-a"
+
+# Instance Configuration
+instance_name = "dify-server"
+machine_type  = "e2-medium"  # 2 vCPU, 4GB RAM
+
+# Storage Configuration
+boot_disk_size = 50   # GB
+data_disk_size = 100  # GB for persistent data
+
+# SSH Configuration
+ssh_user       = "ubuntu"
+ssh_public_key = ""  # Add your SSH public key here (optional, can use gcloud ssh)
+
+# Service Account (optional)
+service_account_email = ""  # Leave empty to use default compute service account
+
+# Environment
+environment = "production"
+
+# Domain and SSL Configuration
+domain_name = "dify.example.com"  # Your domain name
+email       = "admin@example.com"  # Email for Let's Encrypt SSL certificate

@@ -1,0 +1,32 @@
+# Environment files with secrets
+.env.production
+*.env.local
+
+# Backup files
+backups/
+
+# Terraform files
+terraform/.terraform/
+terraform/.terraform.lock.hcl
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+terraform/*.tfvars
+!terraform/*.tfvars.example
+
+# SSH keys
+*.pem
+*.key
+id_rsa*
+
+# Logs
+*.log
+
+# macOS
+.DS_Store
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
